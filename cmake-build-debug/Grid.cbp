@@ -5,7 +5,7 @@
 		<Option title="Grid"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\glfw\;CMake Files\glfw\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\glfw\;CMake Files\glfw\CMake\;CMake Files\glfw\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/dev/Projects/Grid/cmake-build-debug"/>
@@ -88,9 +88,9 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add option="-D_UNICODE"/>
+					<Add option="-D_GLFW_WIN32"/>
 					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
 					<Add option="-DWINVER=0x0501"/>
 					<Add directory="C:/dev/Projects/Grid/glfw/include"/>
 					<Add directory="C:/dev/Projects/Grid/glfw/src"/>
@@ -116,9 +116,9 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add option="-D_UNICODE"/>
+					<Add option="-D_GLFW_WIN32"/>
 					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
 					<Add option="-DWINVER=0x0501"/>
 					<Add directory="C:/dev/Projects/Grid/glfw/include"/>
 					<Add directory="C:/dev/Projects/Grid/glfw/src"/>
@@ -137,9 +137,19 @@
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/dev/Projects/Grid/cmake-build-debug/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="update_mappings">
+				<Option working_dir="C:/dev/Projects/Grid/cmake-build-debug/glfw/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/dev/Projects/Grid/cmake-build-debug/glfw/src/Makefile&quot;  VERBOSE=1 update_mappings"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/dev/Projects/Grid/cmake-build-debug/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/dev/Projects/Grid/cmake-build-debug/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/dev/Projects/Grid/cmake-build-debug/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="C:/dev/Projects/Grid/cmake-build-debug/glfw/src/glfw_config.h">
-			<Option target="glfw"/>
+		<Unit filename="C:/dev/Projects/Grid/glfw/CMake/GenerateMappings.cmake">
+			<Option target="update_mappings"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
@@ -151,9 +161,6 @@
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/egl_context.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="C:/dev/Projects/Grid/glfw/src/egl_context.h">
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/init.c">
@@ -168,22 +175,43 @@
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/mappings.h">
 			<Option target="glfw"/>
 		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/mappings.h.in">
+			<Option target="update_mappings"/>
+		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/null_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/null_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/null_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/null_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/null_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/null_window.c">
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/osmesa_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="C:/dev/Projects/Grid/glfw/src/osmesa_context.h">
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/platform.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/platform.h">
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/wgl_context.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="C:/dev/Projects/Grid/glfw/src/wgl_context.h">
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_init.c">
@@ -195,6 +223,9 @@
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_module.c">
+			<Option target="glfw"/>
+		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
@@ -204,7 +235,13 @@
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_thread.c">
 			<Option target="glfw"/>
 		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_thread.h">
+			<Option target="glfw"/>
+		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_time.h">
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/win32_window.c">
@@ -222,16 +259,13 @@
 		<Unit filename="C:/dev/Projects/Grid/glfw/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\glfw\"/>
 		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\glfw\CMake\"/>
+		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/glfw/src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
-		</Unit>
-		<Unit filename="C:/dev/Projects/Grid/glfw/src/glfw3.pc.in">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
-		</Unit>
-		<Unit filename="C:/dev/Projects/Grid/glfw/src/glfw3Config.cmake.in">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
-		</Unit>
-		<Unit filename="C:/dev/Projects/Grid/glfw/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\glfw\src\"/>
 		</Unit>
 	</Project>

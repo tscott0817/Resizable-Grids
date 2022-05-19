@@ -106,12 +106,6 @@ stdlib.h
 assert.h
 -
 
-C:/dev/Projects/Grid/glfw/src/egl_context.h
-EGL/eglplatform.h
--
-
-C:/dev/Projects/Grid/glfw/src/glx_context.h
-
 C:/dev/Projects/Grid/glfw/src/init.c
 internal.h
 C:/dev/Projects/Grid/glfw/src/internal.h
@@ -184,11 +178,27 @@ stdlib.h
 limits.h
 -
 
-C:/dev/Projects/Grid/glfw/src/nsgl_context.h
-stdatomic.h
+C:/dev/Projects/Grid/glfw/src/null_init.c
+internal.h
+C:/dev/Projects/Grid/glfw/src/internal.h
+stdlib.h
 -
 
+C:/dev/Projects/Grid/glfw/src/null_joystick.c
+internal.h
+C:/dev/Projects/Grid/glfw/src/internal.h
+
 C:/dev/Projects/Grid/glfw/src/null_joystick.h
+
+C:/dev/Projects/Grid/glfw/src/null_monitor.c
+internal.h
+C:/dev/Projects/Grid/glfw/src/internal.h
+stdlib.h
+-
+string.h
+-
+math.h
+-
 
 C:/dev/Projects/Grid/glfw/src/null_platform.h
 dlfcn.h
@@ -202,6 +212,12 @@ C:/dev/Projects/Grid/glfw/src/posix_thread.h
 null_joystick.h
 C:/dev/Projects/Grid/glfw/src/null_joystick.h
 
+C:/dev/Projects/Grid/glfw/src/null_window.c
+internal.h
+C:/dev/Projects/Grid/glfw/src/internal.h
+stdlib.h
+-
+
 C:/dev/Projects/Grid/glfw/src/osmesa_context.c
 stdlib.h
 -
@@ -212,7 +228,9 @@ assert.h
 internal.h
 C:/dev/Projects/Grid/glfw/src/internal.h
 
-C:/dev/Projects/Grid/glfw/src/osmesa_context.h
+C:/dev/Projects/Grid/glfw/src/platform.c
+internal.h
+C:/dev/Projects/Grid/glfw/src/internal.h
 
 C:/dev/Projects/Grid/glfw/src/posix_thread.h
 pthread.h
@@ -242,8 +260,6 @@ malloc.h
 assert.h
 -
 
-C:/dev/Projects/Grid/glfw/src/wgl_context.h
-
 C:/dev/Projects/Grid/glfw/src/win32_init.c
 internal.h
 C:/dev/Projects/Grid/glfw/src/internal.h
@@ -261,6 +277,10 @@ math.h
 -
 
 C:/dev/Projects/Grid/glfw/src/win32_joystick.h
+
+C:/dev/Projects/Grid/glfw/src/win32_module.c
+internal.h
+C:/dev/Projects/Grid/glfw/src/internal.h
 
 C:/dev/Projects/Grid/glfw/src/win32_monitor.c
 internal.h

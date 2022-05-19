@@ -155,6 +155,19 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -190,6 +203,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... update_mappings
 	@echo ... Grid
 	@echo ... glfw
 	@echo ... main.obj

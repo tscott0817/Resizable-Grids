@@ -33,8 +33,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
+  # Include the install script for the subdirectory.
   include("C:/dev/Projects/Grid/cmake-build-debug/glfw/src/cmake_install.cmake")
-
 endif()
 

@@ -144,6 +144,21 @@ glfw/fast:
 	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+# Convenience name for target.
+glfw/src/CMakeFiles/update_mappings.dir/rule:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/src/CMakeFiles/update_mappings.dir/rule
+.PHONY : glfw/src/CMakeFiles/update_mappings.dir/rule
+
+# Convenience name for target.
+update_mappings: glfw/src/CMakeFiles/update_mappings.dir/rule
+
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
 context.obj: context.c.obj
 
 .PHONY : context.obj
@@ -279,6 +294,114 @@ monitor.c.s:
 	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/monitor.c.s
 .PHONY : monitor.c.s
 
+null_init.obj: null_init.c.obj
+
+.PHONY : null_init.obj
+
+# target to build an object file
+null_init.c.obj:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_init.c.obj
+.PHONY : null_init.c.obj
+
+null_init.i: null_init.c.i
+
+.PHONY : null_init.i
+
+# target to preprocess a source file
+null_init.c.i:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_init.c.i
+.PHONY : null_init.c.i
+
+null_init.s: null_init.c.s
+
+.PHONY : null_init.s
+
+# target to generate assembly for a file
+null_init.c.s:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_init.c.s
+.PHONY : null_init.c.s
+
+null_joystick.obj: null_joystick.c.obj
+
+.PHONY : null_joystick.obj
+
+# target to build an object file
+null_joystick.c.obj:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj
+.PHONY : null_joystick.c.obj
+
+null_joystick.i: null_joystick.c.i
+
+.PHONY : null_joystick.i
+
+# target to preprocess a source file
+null_joystick.c.i:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_joystick.c.i
+.PHONY : null_joystick.c.i
+
+null_joystick.s: null_joystick.c.s
+
+.PHONY : null_joystick.s
+
+# target to generate assembly for a file
+null_joystick.c.s:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_joystick.c.s
+.PHONY : null_joystick.c.s
+
+null_monitor.obj: null_monitor.c.obj
+
+.PHONY : null_monitor.obj
+
+# target to build an object file
+null_monitor.c.obj:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj
+.PHONY : null_monitor.c.obj
+
+null_monitor.i: null_monitor.c.i
+
+.PHONY : null_monitor.i
+
+# target to preprocess a source file
+null_monitor.c.i:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_monitor.c.i
+.PHONY : null_monitor.c.i
+
+null_monitor.s: null_monitor.c.s
+
+.PHONY : null_monitor.s
+
+# target to generate assembly for a file
+null_monitor.c.s:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_monitor.c.s
+.PHONY : null_monitor.c.s
+
+null_window.obj: null_window.c.obj
+
+.PHONY : null_window.obj
+
+# target to build an object file
+null_window.c.obj:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_window.c.obj
+.PHONY : null_window.c.obj
+
+null_window.i: null_window.c.i
+
+.PHONY : null_window.i
+
+# target to preprocess a source file
+null_window.c.i:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_window.c.i
+.PHONY : null_window.c.i
+
+null_window.s: null_window.c.s
+
+.PHONY : null_window.s
+
+# target to generate assembly for a file
+null_window.c.s:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/null_window.c.s
+.PHONY : null_window.c.s
+
 osmesa_context.obj: osmesa_context.c.obj
 
 .PHONY : osmesa_context.obj
@@ -305,6 +428,33 @@ osmesa_context.s: osmesa_context.c.s
 osmesa_context.c.s:
 	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.s
 .PHONY : osmesa_context.c.s
+
+platform.obj: platform.c.obj
+
+.PHONY : platform.obj
+
+# target to build an object file
+platform.c.obj:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/platform.c.obj
+.PHONY : platform.c.obj
+
+platform.i: platform.c.i
+
+.PHONY : platform.i
+
+# target to preprocess a source file
+platform.c.i:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/platform.c.i
+.PHONY : platform.c.i
+
+platform.s: platform.c.s
+
+.PHONY : platform.s
+
+# target to generate assembly for a file
+platform.c.s:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/platform.c.s
+.PHONY : platform.c.s
 
 vulkan.obj: vulkan.c.obj
 
@@ -413,6 +563,33 @@ win32_joystick.s: win32_joystick.c.s
 win32_joystick.c.s:
 	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.s
 .PHONY : win32_joystick.c.s
+
+win32_module.obj: win32_module.c.obj
+
+.PHONY : win32_module.obj
+
+# target to build an object file
+win32_module.c.obj:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj
+.PHONY : win32_module.c.obj
+
+win32_module.i: win32_module.c.i
+
+.PHONY : win32_module.i
+
+# target to preprocess a source file
+win32_module.c.i:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/win32_module.c.i
+.PHONY : win32_module.c.i
+
+win32_module.s: win32_module.c.s
+
+.PHONY : win32_module.s
+
+# target to generate assembly for a file
+win32_module.c.s:
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/win32_module.c.s
+.PHONY : win32_module.c.s
 
 win32_monitor.obj: win32_monitor.c.obj
 
@@ -557,6 +734,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... update_mappings
 	@echo ... glfw
 	@echo ... context.obj
 	@echo ... context.i
@@ -573,9 +751,24 @@ help:
 	@echo ... monitor.obj
 	@echo ... monitor.i
 	@echo ... monitor.s
+	@echo ... null_init.obj
+	@echo ... null_init.i
+	@echo ... null_init.s
+	@echo ... null_joystick.obj
+	@echo ... null_joystick.i
+	@echo ... null_joystick.s
+	@echo ... null_monitor.obj
+	@echo ... null_monitor.i
+	@echo ... null_monitor.s
+	@echo ... null_window.obj
+	@echo ... null_window.i
+	@echo ... null_window.s
 	@echo ... osmesa_context.obj
 	@echo ... osmesa_context.i
 	@echo ... osmesa_context.s
+	@echo ... platform.obj
+	@echo ... platform.i
+	@echo ... platform.s
 	@echo ... vulkan.obj
 	@echo ... vulkan.i
 	@echo ... vulkan.s
@@ -588,6 +781,9 @@ help:
 	@echo ... win32_joystick.obj
 	@echo ... win32_joystick.i
 	@echo ... win32_joystick.s
+	@echo ... win32_module.obj
+	@echo ... win32_module.i
+	@echo ... win32_module.s
 	@echo ... win32_monitor.obj
 	@echo ... win32_monitor.i
 	@echo ... win32_monitor.s
