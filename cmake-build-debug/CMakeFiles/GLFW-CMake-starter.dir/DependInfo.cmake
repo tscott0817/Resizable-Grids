@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/tyler/Desktop/Coding/C++/Projects/Grid/main.cpp" "C:/Users/tyler/Desktop/Coding/C++/Projects/Grid/cmake-build-debug/CMakeFiles/GLFW-CMake-starter.dir/main.cpp.obj"
+  "C:/dev/Projects/Grid/main.cpp" "C:/dev/Projects/Grid/cmake-build-debug/CMakeFiles/GLFW-CMake-starter.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/tyler/Desktop/Coding/C++/Projects/Grid/cmake-build-debug/GLFW/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "C:/dev/Projects/Grid/cmake-build-debug/GLFW/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

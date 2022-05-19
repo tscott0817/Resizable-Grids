@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/tyler/Desktop/Coding/C++/Projects/Grid/glfw/src
+# Install script for directory: C:/dev/Projects/Grid/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Grid")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/GLFW-CMake-starter")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

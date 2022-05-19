@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/tyler/Desktop/Coding/C++/Projects/Grid
+# Install script for directory: C:/dev/Projects/Grid
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Grid")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/GLFW-CMake-starter")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/tyler/Desktop/Coding/C++/Projects/Grid/cmake-build-debug/GLFW/cmake_install.cmake")
+  include("C:/dev/Projects/Grid/cmake-build-debug/GLFW/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tyler/Desktop/Coding/C++/Projects/Grid/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/dev/Projects/Grid/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

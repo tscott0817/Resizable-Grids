@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tyler\Desktop\Coding\C++\Projects\Grid
+CMAKE_SOURCE_DIR = C:\dev\Projects\Grid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug
+CMAKE_BINARY_DIR = C:\dev\Projects\Grid\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include GLFW/src/CMakeFiles/glfw.dir/depend.make
@@ -79,212 +79,212 @@ include GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/context.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/context.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/context.c.obj: ../glfw/src/context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object GLFW/src/CMakeFiles/glfw.dir/context.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\context.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object GLFW/src/CMakeFiles/glfw.dir/context.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\context.c.obj   -c C:\dev\Projects\Grid\glfw\src\context.c
 
 GLFW/src/CMakeFiles/glfw.dir/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/context.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\context.c > CMakeFiles\glfw.dir\context.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\context.c > CMakeFiles\glfw.dir\context.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/context.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\context.c -o CMakeFiles\glfw.dir\context.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\context.c -o CMakeFiles\glfw.dir\context.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/init.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/init.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/init.c.obj: ../glfw/src/init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object GLFW/src/CMakeFiles/glfw.dir/init.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\init.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object GLFW/src/CMakeFiles/glfw.dir/init.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\init.c.obj   -c C:\dev\Projects\Grid\glfw\src\init.c
 
 GLFW/src/CMakeFiles/glfw.dir/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/init.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\init.c > CMakeFiles\glfw.dir\init.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\init.c > CMakeFiles\glfw.dir\init.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/init.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\init.c -o CMakeFiles\glfw.dir\init.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\init.c -o CMakeFiles\glfw.dir\init.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/input.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/input.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/input.c.obj: ../glfw/src/input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object GLFW/src/CMakeFiles/glfw.dir/input.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\input.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object GLFW/src/CMakeFiles/glfw.dir/input.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\input.c.obj   -c C:\dev\Projects\Grid\glfw\src\input.c
 
 GLFW/src/CMakeFiles/glfw.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/input.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\input.c > CMakeFiles\glfw.dir\input.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\input.c > CMakeFiles\glfw.dir\input.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/input.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\input.c -o CMakeFiles\glfw.dir\input.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\input.c -o CMakeFiles\glfw.dir\input.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/monitor.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/monitor.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/monitor.c.obj: ../glfw/src/monitor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object GLFW/src/CMakeFiles/glfw.dir/monitor.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\monitor.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object GLFW/src/CMakeFiles/glfw.dir/monitor.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\monitor.c.obj   -c C:\dev\Projects\Grid\glfw\src\monitor.c
 
 GLFW/src/CMakeFiles/glfw.dir/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/monitor.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\monitor.c > CMakeFiles\glfw.dir\monitor.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\monitor.c > CMakeFiles\glfw.dir\monitor.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/monitor.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\monitor.c -o CMakeFiles\glfw.dir\monitor.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\monitor.c -o CMakeFiles\glfw.dir\monitor.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/vulkan.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/vulkan.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/vulkan.c.obj: ../glfw/src/vulkan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object GLFW/src/CMakeFiles/glfw.dir/vulkan.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\vulkan.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\vulkan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object GLFW/src/CMakeFiles/glfw.dir/vulkan.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\vulkan.c.obj   -c C:\dev\Projects\Grid\glfw\src\vulkan.c
 
 GLFW/src/CMakeFiles/glfw.dir/vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/vulkan.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\vulkan.c > CMakeFiles\glfw.dir\vulkan.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\vulkan.c > CMakeFiles\glfw.dir\vulkan.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/vulkan.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\vulkan.c -o CMakeFiles\glfw.dir\vulkan.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\vulkan.c -o CMakeFiles\glfw.dir\vulkan.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/window.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/window.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/window.c.obj: ../glfw/src/window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object GLFW/src/CMakeFiles/glfw.dir/window.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\window.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object GLFW/src/CMakeFiles/glfw.dir/window.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\window.c.obj   -c C:\dev\Projects\Grid\glfw\src\window.c
 
 GLFW/src/CMakeFiles/glfw.dir/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/window.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\window.c > CMakeFiles\glfw.dir\window.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\window.c > CMakeFiles\glfw.dir\window.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/window.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\window.c -o CMakeFiles\glfw.dir\window.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\window.c -o CMakeFiles\glfw.dir\window.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/win32_init.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/win32_init.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/win32_init.c.obj: ../glfw/src/win32_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_init.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_init.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_init.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_init.c.obj   -c C:\dev\Projects\Grid\glfw\src\win32_init.c
 
 GLFW/src/CMakeFiles/glfw.dir/win32_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_init.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_init.c > CMakeFiles\glfw.dir\win32_init.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\win32_init.c > CMakeFiles\glfw.dir\win32_init.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/win32_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_init.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_init.c -o CMakeFiles\glfw.dir\win32_init.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\win32_init.c -o CMakeFiles\glfw.dir\win32_init.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: ../glfw/src/win32_joystick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_joystick.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_joystick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_joystick.c.obj   -c C:\dev\Projects\Grid\glfw\src\win32_joystick.c
 
 GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_joystick.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_joystick.c > CMakeFiles\glfw.dir\win32_joystick.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\win32_joystick.c > CMakeFiles\glfw.dir\win32_joystick.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/win32_joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_joystick.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_joystick.c -o CMakeFiles\glfw.dir\win32_joystick.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\win32_joystick.c -o CMakeFiles\glfw.dir\win32_joystick.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: ../glfw/src/win32_monitor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_monitor.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_monitor.c.obj   -c C:\dev\Projects\Grid\glfw\src\win32_monitor.c
 
 GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_monitor.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_monitor.c > CMakeFiles\glfw.dir\win32_monitor.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\win32_monitor.c > CMakeFiles\glfw.dir\win32_monitor.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/win32_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_monitor.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_monitor.c -o CMakeFiles\glfw.dir\win32_monitor.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\win32_monitor.c -o CMakeFiles\glfw.dir\win32_monitor.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/win32_time.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/win32_time.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/win32_time.c.obj: ../glfw/src/win32_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_time.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_time.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_time.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_time.c.obj   -c C:\dev\Projects\Grid\glfw\src\win32_time.c
 
 GLFW/src/CMakeFiles/glfw.dir/win32_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_time.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_time.c > CMakeFiles\glfw.dir\win32_time.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\win32_time.c > CMakeFiles\glfw.dir\win32_time.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/win32_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_time.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_time.c -o CMakeFiles\glfw.dir\win32_time.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\win32_time.c -o CMakeFiles\glfw.dir\win32_time.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.obj: ../glfw/src/win32_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_thread.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_thread.c.obj   -c C:\dev\Projects\Grid\glfw\src\win32_thread.c
 
 GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_thread.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_thread.c > CMakeFiles\glfw.dir\win32_thread.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\win32_thread.c > CMakeFiles\glfw.dir\win32_thread.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/win32_thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_thread.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_thread.c -o CMakeFiles\glfw.dir\win32_thread.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\win32_thread.c -o CMakeFiles\glfw.dir\win32_thread.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/win32_window.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/win32_window.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/win32_window.c.obj: ../glfw/src/win32_window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_window.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_window.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object GLFW/src/CMakeFiles/glfw.dir/win32_window.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\win32_window.c.obj   -c C:\dev\Projects\Grid\glfw\src\win32_window.c
 
 GLFW/src/CMakeFiles/glfw.dir/win32_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_window.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_window.c > CMakeFiles\glfw.dir\win32_window.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\win32_window.c > CMakeFiles\glfw.dir\win32_window.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/win32_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_window.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\win32_window.c -o CMakeFiles\glfw.dir\win32_window.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\win32_window.c -o CMakeFiles\glfw.dir\win32_window.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.obj: ../glfw/src/wgl_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\wgl_context.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\wgl_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\wgl_context.c.obj   -c C:\dev\Projects\Grid\glfw\src\wgl_context.c
 
 GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/wgl_context.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\wgl_context.c > CMakeFiles\glfw.dir\wgl_context.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\wgl_context.c > CMakeFiles\glfw.dir\wgl_context.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/wgl_context.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\wgl_context.c -o CMakeFiles\glfw.dir\wgl_context.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\wgl_context.c -o CMakeFiles\glfw.dir\wgl_context.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/egl_context.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/egl_context.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/egl_context.c.obj: ../glfw/src/egl_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object GLFW/src/CMakeFiles/glfw.dir/egl_context.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\egl_context.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\egl_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object GLFW/src/CMakeFiles/glfw.dir/egl_context.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\egl_context.c.obj   -c C:\dev\Projects\Grid\glfw\src\egl_context.c
 
 GLFW/src/CMakeFiles/glfw.dir/egl_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/egl_context.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\egl_context.c > CMakeFiles\glfw.dir\egl_context.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\egl_context.c > CMakeFiles\glfw.dir\egl_context.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/egl_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/egl_context.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\egl_context.c -o CMakeFiles\glfw.dir\egl_context.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\egl_context.c -o CMakeFiles\glfw.dir\egl_context.c.s
 
 GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: GLFW/src/CMakeFiles/glfw.dir/flags.make
 GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: GLFW/src/CMakeFiles/glfw.dir/includes_C.rsp
 GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: ../glfw/src/osmesa_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\osmesa_context.c.obj   -c C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\osmesa_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles\glfw.dir\osmesa_context.c.obj   -c C:\dev\Projects\Grid\glfw\src\osmesa_context.c
 
 GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/osmesa_context.c.i"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\osmesa_context.c > CMakeFiles\glfw.dir\osmesa_context.c.i
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E C:\dev\Projects\Grid\glfw\src\osmesa_context.c > CMakeFiles\glfw.dir\osmesa_context.c.i
 
 GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/osmesa_context.c.s"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src\osmesa_context.c -o CMakeFiles\glfw.dir\osmesa_context.c.s
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S C:\dev\Projects\Grid\glfw\src\osmesa_context.c -o CMakeFiles\glfw.dir\osmesa_context.c.s
 
 # Object files for target glfw
 glfw_OBJECTS = \
@@ -324,9 +324,9 @@ GLFW/src/libglfw3.a: GLFW/src/CMakeFiles/glfw.dir/egl_context.c.obj
 GLFW/src/libglfw3.a: GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj
 GLFW/src/libglfw3.a: GLFW/src/CMakeFiles/glfw.dir/build.make
 GLFW/src/libglfw3.a: GLFW/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library libglfw3.a"
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean_target.cmake
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\glfw.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library libglfw3.a"
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean_target.cmake
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\glfw.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 GLFW/src/CMakeFiles/glfw.dir/build: GLFW/src/libglfw3.a
@@ -334,10 +334,10 @@ GLFW/src/CMakeFiles/glfw.dir/build: GLFW/src/libglfw3.a
 .PHONY : GLFW/src/CMakeFiles/glfw.dir/build
 
 GLFW/src/CMakeFiles/glfw.dir/clean:
-	cd /d C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean.cmake
+	cd /d C:\dev\Projects\Grid\cmake-build-debug\GLFW\src && $(CMAKE_COMMAND) -P CMakeFiles\glfw.dir\cmake_clean.cmake
 .PHONY : GLFW/src/CMakeFiles/glfw.dir/clean
 
 GLFW/src/CMakeFiles/glfw.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\tyler\Desktop\Coding\C++\Projects\Grid C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\glfw\src C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src C:\Users\tyler\Desktop\Coding\C++\Projects\Grid\cmake-build-debug\GLFW\src\CMakeFiles\glfw.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\dev\Projects\Grid C:\dev\Projects\Grid\glfw\src C:\dev\Projects\Grid\cmake-build-debug C:\dev\Projects\Grid\cmake-build-debug\GLFW\src C:\dev\Projects\Grid\cmake-build-debug\GLFW\src\CMakeFiles\glfw.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : GLFW/src/CMakeFiles/glfw.dir/depend
 

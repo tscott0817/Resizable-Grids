@@ -1,7 +1,7 @@
-prefix=C:/Program Files (x86)/Grid
+prefix=C:/Program Files (x86)/GLFW-CMake-starter
 exec_prefix=${prefix}
-includedir=C:/Program Files (x86)/Grid/include
-libdir=C:/Program Files (x86)/Grid/lib
+includedir=C:/Program Files (x86)/GLFW-CMake-starter/include
+libdir=C:/Program Files (x86)/GLFW-CMake-starter/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input
