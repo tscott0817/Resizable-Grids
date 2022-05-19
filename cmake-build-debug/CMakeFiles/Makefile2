@@ -72,111 +72,111 @@ CMAKE_BINARY_DIR = C:\dev\Projects\Grid\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/GLFW-CMake-starter.dir/all
-all: GLFW/all
+all: CMakeFiles/Grid.dir/all
+all: glfw/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: GLFW/preinstall
+preinstall: glfw/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/GLFW-CMake-starter.dir/clean
-clean: GLFW/clean
+clean: CMakeFiles/Grid.dir/clean
+clean: glfw/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory GLFW
+# Directory level rules for directory glfw
 
 # Recursive "all" directory target.
-GLFW/all: GLFW/src/all
+glfw/all: glfw/src/all
 
-.PHONY : GLFW/all
+.PHONY : glfw/all
 
 # Recursive "preinstall" directory target.
-GLFW/preinstall: GLFW/src/preinstall
+glfw/preinstall: glfw/src/preinstall
 
-.PHONY : GLFW/preinstall
+.PHONY : glfw/preinstall
 
 # Recursive "clean" directory target.
-GLFW/clean: GLFW/src/clean
+glfw/clean: glfw/src/clean
 
-.PHONY : GLFW/clean
+.PHONY : glfw/clean
 
 #=============================================================================
-# Directory level rules for directory GLFW/src
+# Directory level rules for directory glfw/src
 
 # Recursive "all" directory target.
-GLFW/src/all: GLFW/src/CMakeFiles/glfw.dir/all
+glfw/src/all: glfw/src/CMakeFiles/glfw.dir/all
 
-.PHONY : GLFW/src/all
+.PHONY : glfw/src/all
 
 # Recursive "preinstall" directory target.
-GLFW/src/preinstall:
+glfw/src/preinstall:
 
-.PHONY : GLFW/src/preinstall
+.PHONY : glfw/src/preinstall
 
 # Recursive "clean" directory target.
-GLFW/src/clean: GLFW/src/CMakeFiles/glfw.dir/clean
+glfw/src/clean: glfw/src/CMakeFiles/glfw.dir/clean
 
-.PHONY : GLFW/src/clean
+.PHONY : glfw/src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/GLFW-CMake-starter.dir
+# Target rules for target CMakeFiles/Grid.dir
 
 # All Build rule for target.
-CMakeFiles/GLFW-CMake-starter.dir/all: GLFW/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLFW-CMake-starter.dir\build.make CMakeFiles/GLFW-CMake-starter.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLFW-CMake-starter.dir\build.make CMakeFiles/GLFW-CMake-starter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target GLFW-CMake-starter"
-.PHONY : CMakeFiles/GLFW-CMake-starter.dir/all
+CMakeFiles/Grid.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Grid"
+.PHONY : CMakeFiles/Grid.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/GLFW-CMake-starter.dir/rule: cmake_check_build_system
+CMakeFiles/Grid.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/GLFW-CMake-starter.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/GLFW-CMake-starter.dir/rule
+.PHONY : CMakeFiles/Grid.dir/rule
 
 # Convenience name for target.
-GLFW-CMake-starter: CMakeFiles/GLFW-CMake-starter.dir/rule
+Grid: CMakeFiles/Grid.dir/rule
 
-.PHONY : GLFW-CMake-starter
+.PHONY : Grid
 
 # clean rule for target.
-CMakeFiles/GLFW-CMake-starter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLFW-CMake-starter.dir\build.make CMakeFiles/GLFW-CMake-starter.dir/clean
-.PHONY : CMakeFiles/GLFW-CMake-starter.dir/clean
+CMakeFiles/Grid.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/clean
+.PHONY : CMakeFiles/Grid.dir/clean
 
 #=============================================================================
-# Target rules for target GLFW/src/CMakeFiles/glfw.dir
+# Target rules for target glfw/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
-GLFW/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) $(MAKESILENT) -f GLFW\src\CMakeFiles\glfw.dir\build.make GLFW/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) $(MAKESILENT) -f GLFW\src\CMakeFiles\glfw.dir\build.make GLFW/src/CMakeFiles/glfw.dir/build
+glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target glfw"
-.PHONY : GLFW/src/CMakeFiles/glfw.dir/all
+.PHONY : glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
-GLFW/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 GLFW/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/src/CMakeFiles/glfw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 0
-.PHONY : GLFW/src/CMakeFiles/glfw.dir/rule
+.PHONY : glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
-glfw: GLFW/src/CMakeFiles/glfw.dir/rule
+glfw: glfw/src/CMakeFiles/glfw.dir/rule
 
 .PHONY : glfw
 
 # clean rule for target.
-GLFW/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f GLFW\src\CMakeFiles\glfw.dir\build.make GLFW/src/CMakeFiles/glfw.dir/clean
-.PHONY : GLFW/src/CMakeFiles/glfw.dir/clean
+glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : glfw/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -99,14 +99,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles C:\dev\Projects\Grid\cmake-build-debug\glfw\CMakeFiles\progress.marks
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,71 +116,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Grid
-
-# Build rule for target.
-Grid: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Grid
-.PHONY : Grid
-
-# fast build rule for target.
-Grid/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/build
-.PHONY : Grid/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -190,11 +137,6 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Grid
-	@echo ... glfw
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 .PHONY : help
 
 
@@ -206,6 +148,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\dev\Projects\Grid\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -143,12 +143,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.17.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "GLFW/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "GLFW/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/GLFW-CMake-starter.dir/DependInfo.cmake"
-  "GLFW/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "CMakeFiles/Grid.dir/DependInfo.cmake"
+  "glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
