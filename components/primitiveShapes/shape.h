@@ -40,23 +40,12 @@ protected:
 public:
     /* Constructors */
     Shape();
-    explicit Shape(color fill);
-    explicit Shape(point2D center);
-    Shape(color fill, point2D center);
-    Shape(double red, double green, double blue, double alpha);
-    Shape(double x, double y);
-    Shape(double red, double green, double blue, double alpha, double x, double y);
-    Shape(color fill, double x, double y);
-    Shape(double red, double green, double blue, double alpha, point2D center);
 
     /* Destructor */
     virtual ~Shape() = default;
 
     /* Getters */
     color getColor() const;
-    double getRed() const;
-    double getGreen() const;
-    double getBlue() const;
     double getOpacity() const;
     point2D getCenter() const;
     double getCenterX() const;
@@ -69,17 +58,11 @@ public:
     /* Setters */
     void setColor(color c);
     void setColor(double r, double g, double b, double a);
-    void setRed(double r);
-    void setGreen(double g);
-    void setBlue(double b);
     void setOpacity(double a);
     void setCenter(point2D center);
     void setCenter(double x, double y);
     void setCenterX(double x);
     void setCenterY(double y);
-    virtual void move(double deltaX, double deltaY);
-    virtual void moveX(double deltaX);
-    virtual void moveY(double deltaY);
 
     virtual void draw() const = 0;
 };

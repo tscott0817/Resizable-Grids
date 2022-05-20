@@ -18,69 +18,6 @@ ostream& operator << (ostream& outs, const dimensions &d) {
 Rect::Rect() : Shape(), size({0, 0}) {
 }
 
-Rect::Rect(dimensions size) : Shape() {
-    setSize(size);
-}
-
-Rect::Rect(color fill) : Shape(fill), size({0, 0}) {
-}
-
-Rect::Rect(point2D center) : Shape(center), size({0, 0}) {
-}
-
-Rect::Rect(color fill, point2D center) : Shape(fill, center), size({0, 0}) {
-}
-
-Rect::Rect(color fill, point center, unsigned int width, unsigned int height) {
-}
-
-Rect::Rect(double red, double green, double blue, double alpha) : Shape(red, green, blue, alpha), size({0, 0}) {
-}
-
-Rect::Rect(double x, double y) : Shape(x, y), size({0, 0}) {
-}
-
-Rect::Rect(double red, double green, double blue, double alpha, double x, double y) : Shape(red, green, blue, alpha, x, y), size({0, 0}) {
-}
-
-Rect::Rect(color fill, double x, double y) : Shape(fill, x, y), size({0, 0}) {
-}
-
-Rect::Rect(double red, double green, double blue, double alpha, point2D center) : Shape(red, green, blue, alpha, center), size({0, 0}) {
-}
-
-Rect::Rect(color fill, dimensions size) : Shape(fill) {
-    setSize(size);
-}
-
-Rect::Rect(point2D center, dimensions size) : Shape(center) {
-    setSize(size);
-}
-
-Rect::Rect(color fill, point2D center, dimensions size) : Shape(fill, center) {
-    setSize(size);
-}
-
-Rect::Rect(double red, double green, double blue, double alpha, dimensions size) : Shape(red, green, blue, alpha) {
-    setSize(size);
-}
-
-Rect::Rect(double x, double y, dimensions size) : Shape(x, y) {
-    setSize(size);
-}
-
-Rect::Rect(double red, double green, double blue, double alpha, double x, double y, dimensions size) : Shape(red, green, blue, alpha, x, y) {
-    setSize(size);
-}
-
-Rect::Rect(color fill, double x, double y, dimensions size) : Shape(fill, x, y) {
-    setSize(size);
-}
-
-Rect::Rect(double red, double green, double blue, double alpha, point2D center, dimensions size) : Shape(red, green, blue, alpha, center) {
-    setSize(size);
-}
-
 dimensions Rect::getSize() const {
     return size;
 }
@@ -138,33 +75,6 @@ void Rect::changeWidth(double delta) {
 void Rect::changeHeight(double delta) {
     setSize({size.width, size.height + delta});
 }
-
-/*bool Rect::isOverlapping(const Rect &r) const {
-    // There are only two cases when rectangles are *not* overlapping:
-    // 1. when one is to the left of the other
-    // 2. when one is above the other
-
-    if (r.getRightX() < getLeftX() || r.getBottomY() < getTopY() || r.getLeftX() > getRightX() || r.getTopY() > getBottomY()) {
-        return false;
-    }
-    else {
-        return true;
-    }
-
-}*/
-
-bool Rect::isOverlapping(int x, int y) const {
-
-    if (y > getTopY() && y < getBottomY() && x > getLeftX() && x < getRightX()){
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-
-
 
 void Rect::draw() const {
 

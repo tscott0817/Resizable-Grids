@@ -34,44 +34,8 @@ ostream& operator << (ostream& outs, const point2D &p) {
 Shape::Shape() : fill({0.0, 0.0, 0.0}), center({0, 0}) {
 }
 
-Shape::Shape(color fill) : fill(fill), center({0, 0}) {
-}
-
-Shape::Shape(point2D center) : fill({0, 0, 0}), center(center) {
-}
-
-Shape::Shape(color fill, point2D center) : fill(fill), center(center) {
-}
-
-Shape::Shape(double red, double green, double blue, double alpha) : fill({red, green, blue, alpha}) {
-}
-
-Shape::Shape(double x, double y) : fill({0, 0, 0}), center({x, y}) {
-}
-
-Shape::Shape(double red, double green, double blue, double alpha, double x, double y) : fill({red, green, blue, alpha}), center({x, y}) {
-}
-
-Shape::Shape(color fill, double x, double y) : fill(fill), center({x, y}) {
-}
-
-Shape::Shape(double red, double green, double blue, double alpha, point2D center) : fill({red, green, blue, alpha}), center(center) {
-}
-
 color Shape::getColor() const {
     return fill;
-}
-
-double Shape::getRed() const {
-    return fill.red;
-}
-
-double Shape::getGreen() const {
-    return fill.green;
-}
-
-double Shape::getBlue() const {
-    return fill.blue;
 }
 
 double Shape::getOpacity() const {
@@ -98,18 +62,6 @@ void Shape::setColor(double r, double g, double b, double a) {
     fill = {r, g, b, a};
 }
 
-void Shape::setRed(double r) {
-    fill.red = r;
-}
-
-void Shape::setGreen(double g) {
-    fill.green = g;
-}
-
-void Shape::setBlue(double b) {
-    fill.blue = b;
-}
-
 void Shape::setOpacity(double a) {
     fill.alpha = a;
 }
@@ -128,18 +80,5 @@ void Shape::setCenterX(double x) {
 
 void Shape::setCenterY(double y) {
     center.y = y;
-}
-
-void Shape::move(double deltaX, double deltaY) {
-    center.x += deltaX;
-    center.y += deltaY;
-}
-
-void Shape::moveX(double deltaX) {
-    center.x += deltaX;
-}
-
-void Shape::moveY(double deltaY) {
-    center.y += deltaY;
 }
 
