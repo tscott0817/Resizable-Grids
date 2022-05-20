@@ -65,13 +65,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glew/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glew/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Grid.dir/DependInfo.cmake"
-  "glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
-  "glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
+  "glew/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "glew/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
   )

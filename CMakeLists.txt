@@ -3,13 +3,14 @@ cmake_minimum_required( VERSION 3.1 )
 project( Grid )
 
 find_package( OpenGL REQUIRED )
+#find_package( GLEW REQUIRED )
 
 include_directories( ${OPENGL_INCLUDE_DIRS} )
 
 set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
-add_subdirectory( glfw )
+add_subdirectory( glfw glew )
 
 if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
@@ -18,8 +19,14 @@ endif()
 set( GRID-SRC
      main.cpp
      )
-     
-add_executable( Grid WIN32 ${GRID-SRC} )
+
+#include_directories(${CMAKE_CURRENT_SOURCE_DIR}/glew/include/GL)
+#link_directories(${CMAKE_CURRENT_SOURCE_DIR}/glew/lib)
+
+add_executable( Grid WIN32 ${GRID-SRC} GL/glew.h glew.c GL/wglew.h components/grid/grid.h components/grid/grid.cpp
+                components/primitiveShapes/shape.h components/primitiveShapes/shape.cpp components/primitiveShapes/rect.h
+                components/primitiveShapes/rect.cpp)
+
 target_link_libraries( Grid ${OPENGL_LIBRARIES} glfw )
 if( MSVC )
     if(${CMAKE_VERSION} VERSION_LESS "3.6.0") 

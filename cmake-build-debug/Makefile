@@ -152,7 +152,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f glew\src\CMakeFiles\glfw.dir\build.make glew/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -165,8 +165,116 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f glew\src\CMakeFiles\update_mappings.dir\build.make glew/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
+
+components/grid/grid.obj: components/grid/grid.cpp.obj
+
+.PHONY : components/grid/grid.obj
+
+# target to build an object file
+components/grid/grid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/grid/grid.cpp.obj
+.PHONY : components/grid/grid.cpp.obj
+
+components/grid/grid.i: components/grid/grid.cpp.i
+
+.PHONY : components/grid/grid.i
+
+# target to preprocess a source file
+components/grid/grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/grid/grid.cpp.i
+.PHONY : components/grid/grid.cpp.i
+
+components/grid/grid.s: components/grid/grid.cpp.s
+
+.PHONY : components/grid/grid.s
+
+# target to generate assembly for a file
+components/grid/grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/grid/grid.cpp.s
+.PHONY : components/grid/grid.cpp.s
+
+components/primitiveShapes/rect.obj: components/primitiveShapes/rect.cpp.obj
+
+.PHONY : components/primitiveShapes/rect.obj
+
+# target to build an object file
+components/primitiveShapes/rect.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj
+.PHONY : components/primitiveShapes/rect.cpp.obj
+
+components/primitiveShapes/rect.i: components/primitiveShapes/rect.cpp.i
+
+.PHONY : components/primitiveShapes/rect.i
+
+# target to preprocess a source file
+components/primitiveShapes/rect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.i
+.PHONY : components/primitiveShapes/rect.cpp.i
+
+components/primitiveShapes/rect.s: components/primitiveShapes/rect.cpp.s
+
+.PHONY : components/primitiveShapes/rect.s
+
+# target to generate assembly for a file
+components/primitiveShapes/rect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.s
+.PHONY : components/primitiveShapes/rect.cpp.s
+
+components/primitiveShapes/shape.obj: components/primitiveShapes/shape.cpp.obj
+
+.PHONY : components/primitiveShapes/shape.obj
+
+# target to build an object file
+components/primitiveShapes/shape.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj
+.PHONY : components/primitiveShapes/shape.cpp.obj
+
+components/primitiveShapes/shape.i: components/primitiveShapes/shape.cpp.i
+
+.PHONY : components/primitiveShapes/shape.i
+
+# target to preprocess a source file
+components/primitiveShapes/shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.i
+.PHONY : components/primitiveShapes/shape.cpp.i
+
+components/primitiveShapes/shape.s: components/primitiveShapes/shape.cpp.s
+
+.PHONY : components/primitiveShapes/shape.s
+
+# target to generate assembly for a file
+components/primitiveShapes/shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.s
+.PHONY : components/primitiveShapes/shape.cpp.s
+
+glew.obj: glew.c.obj
+
+.PHONY : glew.obj
+
+# target to build an object file
+glew.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/glew.c.obj
+.PHONY : glew.c.obj
+
+glew.i: glew.c.i
+
+.PHONY : glew.i
+
+# target to preprocess a source file
+glew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/glew.c.i
+.PHONY : glew.c.i
+
+glew.s: glew.c.s
+
+.PHONY : glew.s
+
+# target to generate assembly for a file
+glew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/glew.c.s
+.PHONY : glew.c.s
 
 main.obj: main.cpp.obj
 
@@ -206,6 +314,18 @@ help:
 	@echo ... update_mappings
 	@echo ... Grid
 	@echo ... glfw
+	@echo ... components/grid/grid.obj
+	@echo ... components/grid/grid.i
+	@echo ... components/grid/grid.s
+	@echo ... components/primitiveShapes/rect.obj
+	@echo ... components/primitiveShapes/rect.i
+	@echo ... components/primitiveShapes/rect.s
+	@echo ... components/primitiveShapes/shape.obj
+	@echo ... components/primitiveShapes/shape.i
+	@echo ... components/primitiveShapes/shape.s
+	@echo ... glew.obj
+	@echo ... glew.i
+	@echo ... glew.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
