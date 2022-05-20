@@ -6,42 +6,51 @@ Grid::Grid() {
 
 }
 
-void Grid::grid(double x, double y, double width, double height) {
+void Grid::grid(double x, double y, double width, double height, double rowSize, double colSize) {
 
-    gridWidth = 8; // # Columns
-    gridHeight = 7; // # Rows
+
+    gridWidth = rowSize; // # Columns
+    gridHeight = colSize; // # Rows
+
+    // Amount of space in between cells (lower denom = more space)
+    scalarWS = width/8;
+    scalarHS = height/8;
+
+    // Size of cells themselves (lower denom = smaller cells)
+    scalarW = width/9;
+    scalarH = height/9;
+
+    Rect newCell;
+    newCell.setColor(black); // TODO: Make global param
+    newCell.setSize(scalarW, scalarH);
 
     // Outer container
     container.setCenter(x, y);
-    container.setSize(width, height);
+    container.setSize(rowSize * scalarWS + (newCell.getWidth()/2), colSize * scalarHS + (newCell.getHeight()/2)); // Size of container is relative to # of cells + margins
     container.setColor(grey);
     container.draw();
+
+    // Shifts grid relative to container
+    // TODO: Need to shift right by size of cell/2
+    translateX = (container.getWidth()/2) - (newCell.getWidth()/2);
+    translateY = (container.getHeight()/2) - (newCell.getHeight()/2);
 
     // Offset for cells
     cellWidthPos = 0;
     cellHeightPos = 0;
 
-    // To resize
-    translateX = width/2.5;
-    translateY = height/2.55;
-    scalarW = width/9.6;
-    scalarH = height/9;
-    scalarWS = width/8.7; // Width spacing between each cell
-    scalarHS = height/7.7; // Height spacing between each cell
-
     // Columns
     if (cells.size() < gridHeight) { // Build grid only if empty (at start of program)
 
+        //Rect newCell;
         for (int i = 0; i < gridHeight; i++) {
 
-            Rect newCell;
+            //Rect newCell;
             std::vector<Rect> temp;
 
             // Rows
             for (int j = 0; j < gridWidth; j++) {
 
-                newCell.setColor(black); // TODO: Make global param
-                newCell.setSize(scalarW, scalarH);
                 newCell.setCenter((x + cellWidthPos) - translateX, (y + cellHeightPos) - translateY);
                 temp.push_back(newCell);
                 cellWidthPos += scalarWS;
@@ -78,9 +87,10 @@ void Grid::hoverColor() {
 
 // TODO: Remove hardcoded values
 void Grid::hoverCompress() {
-    cells[column][row].setSize(scalarW/1.05, scalarH/1.05);
+    cells[column][row].setSize(scalarW/1.05, scalarH/1.05); // Denom = value to shrink cell by
 }
 
+// Stops every event at once
 void Grid::releaseAll() {
     for (int i = 0; i < cells.size(); i++) {
         for (int j = 0; j < cells[i].size(); j++) {
@@ -100,13 +110,10 @@ void Grid::releaseCompress() {
 }
 
 void Grid::draw() {
-
     for (int i = 0; i < cells.size(); i++) {
-
         for (int j = 0; j < cells[i].size(); j++) {
-            // Draw cells
             cells[i][j].draw();
-            }
+        }
     }
 }
 

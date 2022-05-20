@@ -46,13 +46,11 @@ private:
     double column;
     double row;
 
-    std::string keyLabel;
-
 public:
 
     Grid();
 
-    void grid(double x, double y, double width, double height);
+    void grid(double x, double y, double width, double height, double rowSize, double colSize);
     bool checkOverlap(int x, int y);
     void hoverColor();
     void hoverCompress();

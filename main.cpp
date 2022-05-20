@@ -111,7 +111,7 @@ void display() {
 
 
     /* Stuff to be drawn goes here */
-    gridTest.grid(WIDTH/2, HEIGHT/2, WIDTH/2, HEIGHT/2); // Centers grid
+    gridTest.grid(WIDTH/2, HEIGHT/2, 600, 600, 8, 3); // Centers grid
     gridTest.draw();
 
     glfwSwapBuffers(window); // Switch old buffer with new; update screen
