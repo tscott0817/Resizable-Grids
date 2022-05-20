@@ -97,37 +97,9 @@ void Grid::releaseColor() {
 
 void Grid::releaseCompress() {
     cells[column][row].setSize(scalarW, scalarH);
-};
-
-void Grid::setKey(std::string key){
-    keyLabel = key;
-}
-
-std::string Grid::getKey() {
-    return keyLabel;
 }
 
 void Grid::draw() {
-
-//    int i = 0;
-//    Scales scales;
-//    std::vector<std::string> scale = scales.buildScale('A'); // Need to get key as variable
-//    for (const std::vector<Rect> &vec: cells) {
-//        keyLabel = scale[i];
-//        for (Rect rect: vec) {
-//
-//            // Draw cells first
-//            rect.draw();
-//
-//            // Center text on ui elements and draw on top of cells
-//            glRasterPos2i(rect.getLeftX() + 25, rect.getTopY() + 35);
-//            glColor3f(1, 1, 1);
-//            for (const char &letter : keyLabel) {
-//                glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, letter);
-//            }
-//        }
-//        i += 1;
-//    }
 
     for (int i = 0; i < cells.size(); i++) {
 

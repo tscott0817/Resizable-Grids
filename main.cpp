@@ -6,70 +6,72 @@
 #include <chrono>
 #include <stdio.h>
 #include <stdlib.h>
+#include "components/grid/grid.h"
 
-#define WIDTH 1280
-#define HEIGHT 720
+#define WIDTH 1600
+#define HEIGHT 900
 
-
+// For keyboard keys
 struct key {
     bool cur, prev;
 };
 
+// Init variables
 GLFWwindow* window;
-GLFWmonitor* monitor;
+GLFWmonitor* monitor; // The literal PC monitor; used for fullscreen mode
 bool running = 1, fullscreen;
-std::map<int, key> keyMap;
+std::map<int, key> keyMap; // Keyboard values
 
+// Classes
+Grid gridTest;
+
+// Local functions
+static void cursor(GLFWwindow* window, double x, double y);
 void display();
 void input();
 void update();
 
 int main(void)
 {
+
+    /* GLFW init */
     glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-
-    //GLFWwindow* window;
-
-    /* Initialize the library */
     if (!glfwInit())
         return -1;
 
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1280, 720, "Grid System", NULL, NULL);
+    window = glfwCreateWindow(WIDTH, HEIGHT, "Grid System", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
         return -1;
     }
-
-    /* Make the window's context current */
     glfwMakeContextCurrent(window);
+
 
     /* GLEW init */
     GLenum err = glewInit();
     if (GLEW_OK != err)
     {
-        /* Problem: glewInit failed, something is seriously wrong. */
         fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
     }
     fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
 
-
+    /*************
+     * Main Loop *
+     *************/
+    double lastTime = 0.0; // Tracks previous frame for refresh rate
     monitor = glfwGetPrimaryMonitor();
     running = true;
     fullscreen = false;
-
-    double lastTime = 0.0;
-
     while (running) {
 
-        double time = glfwGetTime();
+        double time = glfwGetTime(); // Gets current program time
         double deltaTime = time - lastTime; // Time since last frame
 
-        // Locks framerate at 60fps
+        // Locks framerate at 60fps (or keeps it above?)
         if (deltaTime >= 1/60) {
-            lastTime = time;
+            lastTime = time; // Updates the time since previous frame
             display();
         }
         update();
@@ -81,17 +83,44 @@ int main(void)
     return 0;
 }
 
+static void cursor(GLFWwindow* window, double x, double y) {
+
+    if (gridTest.checkOverlap(x, y)) {
+        gridTest.hoverColor();
+        gridTest.hoverCompress();
+    }
+
+    else {
+        gridTest.releaseAll();
+    }
+}
+
 void display() {
+
+
+    glViewport(0, 0, WIDTH, HEIGHT);
+    glMatrixMode(GL_PROJECTION); // Define GL_PROJECTION only once; use GL_MODELVIEW for objects
+    glLoadIdentity();
+    glOrtho(0.0, WIDTH, HEIGHT, 0.0, -1.f, 1.f);
 
     // Set background color
     glClearColor( 0.2f, 0.4f, 0.5f, 0.0f );
     glClear(GL_COLOR_BUFFER_BIT);
 
-    // Draw stuff here
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+
+    /* Stuff to be drawn goes here */
+    gridTest.grid(WIDTH/2, HEIGHT/2, WIDTH/2, HEIGHT/2); // Centers grid
+    gridTest.draw();
 
     glfwSwapBuffers(window); // Switch old buffer with new; update screen
+    glFlush();
+
 }
 
+
+/* Event handling for user input */
 void input() {
 
     glfwPollEvents();
@@ -112,6 +141,8 @@ void input() {
     keyMap[GLFW_KEY_F].prev = glfwGetKey(window, GLFW_KEY_F);
 }
 
+/* Things to happen on every frame refresh */
 void update() {
 
+    glfwSetCursorPosCallback(window, cursor); // Cursor callback
 }

@@ -59,8 +59,6 @@ public:
     void releaseAll();
     void releaseColor();
     void releaseCompress();
-    void setKey(std::string key);
-    std::string getKey();
     void draw();
 
 };
