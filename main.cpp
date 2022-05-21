@@ -109,9 +109,8 @@ void display() {
 
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
-
     /* Stuff to be drawn goes here */
-    gridTest.grid(WIDTH/2, HEIGHT/2, 600, 600, 8, 3); // Centers grid
+    gridTest.grid(WIDTH/2, HEIGHT/2, 512, 512, 12, 12); // Centers grid
     gridTest.draw();
 
     glfwSwapBuffers(window); // Switch old buffer with new; update screen

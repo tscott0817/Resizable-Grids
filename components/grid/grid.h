@@ -32,8 +32,7 @@ private:
     std::vector<std::vector<Rect>> cells;
 
     Rect container;
-
-    // Offset for cells
+    Rect newCell;
     double cellWidthPos;
     double cellHeightPos;
     double translateX;

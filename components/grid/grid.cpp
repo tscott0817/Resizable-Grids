@@ -13,25 +13,32 @@ void Grid::grid(double x, double y, double width, double height, double rowSize,
     gridHeight = colSize; // # Rows
 
     // Amount of space in between cells (lower denom = more space)
-    scalarWS = width/8;
-    scalarHS = height/8;
+    scalarWS = width/colSize;
+    scalarHS = height/rowSize;
+
+//    // Size of cells themselves (lower denom = smaller cells)
+//    scalarW = width/colSize + 1.0;
+//    scalarH = height/rowSize + 1.0;
 
     // Size of cells themselves (lower denom = smaller cells)
-    scalarW = width/9;
-    scalarH = height/9;
+    scalarW = width/(colSize + 1.0);
+    scalarH = height/(rowSize + 1.0);
 
-    Rect newCell;
+
+    // Cell stuff
     newCell.setColor(black); // TODO: Make global param
     newCell.setSize(scalarW, scalarH);
 
     // Outer container
     container.setCenter(x, y);
-    container.setSize(rowSize * scalarWS + (newCell.getWidth()/2), colSize * scalarHS + (newCell.getHeight()/2)); // Size of container is relative to # of cells + margins
-    container.setColor(grey);
+    // Size of container is relative to # of cells, margins, and size of cell
+    container.setSize(rowSize * scalarW + (newCell.getWidth()/2), colSize * scalarH + (newCell.getHeight()/2));
+    //container.setSize(rowSize * scalarW, colSize * scalarH);
+    //container.setSize(rowSize * scalarWS, colSize * scalarHS);
+    container.setColor(grey); // TODO: Make global param
     container.draw();
 
     // Shifts grid relative to container
-    // TODO: Need to shift right by size of cell/2
     translateX = (container.getWidth()/2) - (newCell.getWidth()/2);
     translateY = (container.getHeight()/2) - (newCell.getHeight()/2);
 
@@ -42,7 +49,6 @@ void Grid::grid(double x, double y, double width, double height, double rowSize,
     // Columns
     if (cells.size() < gridHeight) { // Build grid only if empty (at start of program)
 
-        //Rect newCell;
         for (int i = 0; i < gridHeight; i++) {
 
             //Rect newCell;
@@ -54,6 +60,7 @@ void Grid::grid(double x, double y, double width, double height, double rowSize,
                 newCell.setCenter((x + cellWidthPos) - translateX, (y + cellHeightPos) - translateY);
                 temp.push_back(newCell);
                 cellWidthPos += scalarWS;
+                //cellWidthPos += 60; // TODO: Not sure if want hardcoded; used scalarWS before
             }
 
             cells.push_back(temp);
@@ -68,8 +75,8 @@ bool Grid::checkOverlap(int x, int y) {
         for (int j = 0; j < cells[i].size(); j++) {
 
             // Check if mouse in area of a cell
-            if (y > cells[i][j].getTopY() && y < cells[i][j].getBottomY() && x > cells[i][j].getLeftX() &&
-                x < cells[i][j].getRightX()) {
+            if (y > cells[i][j].getTopY() && y < cells[i][j].getBottomY()
+                && x > cells[i][j].getLeftX() && x < cells[i][j].getRightX()) {
 
                 // Hold cell at current mouse pos for interactions
                 column = i;
