@@ -110,9 +110,9 @@ void display() {
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
     /* Stuff to be drawn goes here */
-    gridTest.setMarginVert(75);
-    gridTest.setMarginHor(100);
-    gridTest.grid(WIDTH/2, HEIGHT/2, 512, 512, 2, 5); // Centers grid
+    gridTest.setPadding(25); // Higher number = more space around edge of container
+    gridTest.setCellSize(5); // Lower number = larger cells
+    gridTest.grid(WIDTH/2, HEIGHT/2, 700, 450, 4, 5); // Centers grid
     gridTest.draw();
 
     glfwSwapBuffers(window); // Switch old buffer with new; update screen

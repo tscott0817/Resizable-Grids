@@ -36,14 +36,12 @@ private:
     double translateY;
     double scalarW;
     double scalarH;
-    double scalarWS; // Width spacing between each cell
-    double scalarHS; // Height spacing between each cell
 
     double column;
     double row;
 
-    int marginVert;
-    int marginHor;
+    int cellSize;
+    int containerPadding;
 
 public:
 
@@ -52,8 +50,8 @@ public:
     void grid(double x, double y, double width, double height, double rowSize, double colSize);
 
     // Setters
-    void setMarginVert(int margin);
-    void setMarginHor(int margin);
+    void setCellSize(int size);
+    void setPadding(int padding);
     // Getters
 
 

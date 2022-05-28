@@ -8,43 +8,36 @@ Grid::Grid() {
 
 void Grid::grid(double x, double y, double width, double height, double rowSize, double colSize) {
 
-    int padding = 30;
     // Outer container;
     container.setCenter(x, y);
-    // Size of container is relative to # of cells, margins, and size of cell
-    //container.setSize(rowSize * scalarW + (newCell.getWidth()/2), colSize * scalarH + (newCell.getHeight()/2));
-    //container.setSize(rowSize * scalarW, colSize * scalarH);
-    //container.setSize(rowSize * scalarWS, colSize * scalarHS);
-    container.setSize(width + padding, height + padding); // TODO: Don't hardcode container padding
+    container.setSize(width - cellSize + containerPadding, height - cellSize + containerPadding);
     container.setColor(grey); // TODO: Make global param
     container.draw();
 
+    // Scales cells relative to container
     scalarW = (width/rowSize);
     scalarH = (height/colSize);
 
-    // Cell stuff
     newCell.setColor(black); // TODO: Make global param
-    newCell.setSize(scalarW - 5, scalarH - 5);
+    newCell.setSize(scalarW - cellSize, scalarH - cellSize);
 
-    // Starts cell (0,0) at top left of container
-    translateX = (container.getWidth()/2) - (newCell.getWidth()/2);
-    translateY = (container.getHeight()/2) - (newCell.getHeight()/2);
+    // Positions cells in relation to container
+    translateX = (container.getWidth()/2) - (newCell.getWidth()/2) - (containerPadding/2);
+    translateY = (container.getHeight()/2) - (newCell.getHeight()/2) - (containerPadding/2);
 
-    // Offset for cells
+    // Offset for cells; iterated by the scalars; needed so we start at 0 for first cell (since scalar already set and > 0)
     cellWidthMargin = 0;
     cellHeightMargin = 0;
 
-    // Columns
     if (cells.size() < colSize) { // Build grid only if empty (at start of program)
 
+        // Columns
         for (int i = 0; i < colSize; i++) {
-            std::vector<Rect> temp;
+            std::vector<Rect> temp; // Holds current cells
 
             // Rows
             for (int j = 0; j < rowSize; j++) {
-
-                // padding/2 cancels the difference of the corners; since cell (0,0) is at top left edge
-                newCell.setCenter(((x + cellWidthMargin) - translateX) + padding/2, ((y + cellHeightMargin) - translateY) + padding/2);
+                newCell.setCenter(x + cellWidthMargin - translateX, y + cellHeightMargin - translateY);
                 temp.push_back(newCell);
                 cellWidthMargin += scalarW;
             }
@@ -56,11 +49,12 @@ void Grid::grid(double x, double y, double width, double height, double rowSize,
     }
 }
 
-void Grid::setMarginVert(int margin) {
-    marginVert = margin;
+void Grid::setCellSize(int size) {
+    cellSize = size;
 }
-void Grid::setMarginHor(int margin) {
-    marginHor = margin;
+
+void Grid::setPadding(int padding) {
+    containerPadding = padding;
 }
 
 bool Grid::checkOverlap(int x, int y) {
