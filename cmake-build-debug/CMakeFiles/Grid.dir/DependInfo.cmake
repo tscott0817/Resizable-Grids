@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/dev/Projects/Grid/components/primitiveShapes/rect.cpp" "C:/dev/Projects/Grid/cmake-build-debug/CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj"
   "C:/dev/Projects/Grid/components/primitiveShapes/shape.cpp" "C:/dev/Projects/Grid/cmake-build-debug/CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj"
   "C:/dev/Projects/Grid/main.cpp" "C:/dev/Projects/Grid/cmake-build-debug/CMakeFiles/Grid.dir/main.cpp.obj"
+  "C:/dev/Projects/Grid/window.cpp" "C:/dev/Projects/Grid/cmake-build-debug/CMakeFiles/Grid.dir/window.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

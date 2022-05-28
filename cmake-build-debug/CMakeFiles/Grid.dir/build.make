@@ -104,10 +104,24 @@ CMakeFiles/Grid.dir/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Grid.dir/glew.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\dev\Projects\Grid\glew.c -o CMakeFiles\Grid.dir\glew.c.s
 
+CMakeFiles/Grid.dir/window.cpp.obj: CMakeFiles/Grid.dir/flags.make
+CMakeFiles/Grid.dir/window.cpp.obj: CMakeFiles/Grid.dir/includes_CXX.rsp
+CMakeFiles/Grid.dir/window.cpp.obj: ../window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Grid.dir/window.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Grid.dir\window.cpp.obj -c C:\dev\Projects\Grid\window.cpp
+
+CMakeFiles/Grid.dir/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Grid.dir/window.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\Projects\Grid\window.cpp > CMakeFiles\Grid.dir\window.cpp.i
+
+CMakeFiles/Grid.dir/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Grid.dir/window.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\Projects\Grid\window.cpp -o CMakeFiles\Grid.dir\window.cpp.s
+
 CMakeFiles/Grid.dir/components/grid/grid.cpp.obj: CMakeFiles/Grid.dir/flags.make
 CMakeFiles/Grid.dir/components/grid/grid.cpp.obj: CMakeFiles/Grid.dir/includes_CXX.rsp
 CMakeFiles/Grid.dir/components/grid/grid.cpp.obj: ../components/grid/grid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Grid.dir/components/grid/grid.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Grid.dir/components/grid/grid.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Grid.dir\components\grid\grid.cpp.obj -c C:\dev\Projects\Grid\components\grid\grid.cpp
 
 CMakeFiles/Grid.dir/components/grid/grid.cpp.i: cmake_force
@@ -121,7 +135,7 @@ CMakeFiles/Grid.dir/components/grid/grid.cpp.s: cmake_force
 CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj: CMakeFiles/Grid.dir/flags.make
 CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj: CMakeFiles/Grid.dir/includes_CXX.rsp
 CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj: ../components/primitiveShapes/shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Grid.dir\components\primitiveShapes\shape.cpp.obj -c C:\dev\Projects\Grid\components\primitiveShapes\shape.cpp
 
 CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.i: cmake_force
@@ -135,7 +149,7 @@ CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.s: cmake_force
 CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj: CMakeFiles/Grid.dir/flags.make
 CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj: CMakeFiles/Grid.dir/includes_CXX.rsp
 CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj: ../components/primitiveShapes/rect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Grid.dir\components\primitiveShapes\rect.cpp.obj -c C:\dev\Projects\Grid\components\primitiveShapes\rect.cpp
 
 CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.i: cmake_force
@@ -150,6 +164,7 @@ CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.s: cmake_force
 Grid_OBJECTS = \
 "CMakeFiles/Grid.dir/main.cpp.obj" \
 "CMakeFiles/Grid.dir/glew.c.obj" \
+"CMakeFiles/Grid.dir/window.cpp.obj" \
 "CMakeFiles/Grid.dir/components/grid/grid.cpp.obj" \
 "CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj" \
 "CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj"
@@ -159,6 +174,7 @@ Grid_EXTERNAL_OBJECTS =
 
 Grid.exe: CMakeFiles/Grid.dir/main.cpp.obj
 Grid.exe: CMakeFiles/Grid.dir/glew.c.obj
+Grid.exe: CMakeFiles/Grid.dir/window.cpp.obj
 Grid.exe: CMakeFiles/Grid.dir/components/grid/grid.cpp.obj
 Grid.exe: CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj
 Grid.exe: CMakeFiles/Grid.dir/components/primitiveShapes/rect.cpp.obj
@@ -167,7 +183,7 @@ Grid.exe: glew/src/libglfw3.a
 Grid.exe: CMakeFiles/Grid.dir/linklibs.rsp
 Grid.exe: CMakeFiles/Grid.dir/objects1.rsp
 Grid.exe: CMakeFiles/Grid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Grid.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Grid.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Grid.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

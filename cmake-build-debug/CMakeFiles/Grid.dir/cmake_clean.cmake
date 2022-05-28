@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Grid.dir/components/primitiveShapes/shape.cpp.obj"
   "CMakeFiles/Grid.dir/glew.c.obj"
   "CMakeFiles/Grid.dir/main.cpp.obj"
+  "CMakeFiles/Grid.dir/window.cpp.obj"
   "Grid.exe"
   "Grid.exe.manifest"
   "Grid.pdb"

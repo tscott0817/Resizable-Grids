@@ -19,9 +19,9 @@ set( GRID-SRC
      main.cpp
      )
 
-add_executable( Grid WIN32 ${GRID-SRC} GL/glew.h glew.c GL/wglew.h components/grid/grid.h components/grid/grid.cpp
-                components/primitiveShapes/shape.h components/primitiveShapes/shape.cpp components/primitiveShapes/rect.h
-                components/primitiveShapes/rect.cpp)
+add_executable( Grid WIN32 ${GRID-SRC} GL/glew.h glew.c GL/wglew.h window.h window.cpp components/grid/grid.h
+                components/grid/grid.cpp components/primitiveShapes/shape.h components/primitiveShapes/shape.cpp
+                components/primitiveShapes/rect.h components/primitiveShapes/rect.cpp)
 
 target_link_libraries( Grid ${OPENGL_LIBRARIES} glfw OpenGL::GL)
 

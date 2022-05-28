@@ -280,6 +280,12 @@
 		<Unit filename="C:/dev/Projects/Grid/main.cpp">
 			<Option target="Grid"/>
 		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/window.cpp">
+			<Option target="Grid"/>
+		</Unit>
+		<Unit filename="C:/dev/Projects/Grid/window.h">
+			<Option target="Grid"/>
+		</Unit>
 		<Unit filename="C:/dev/Projects/Grid/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

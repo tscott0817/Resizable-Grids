@@ -8,66 +8,59 @@ Grid::Grid() {
 
 void Grid::grid(double x, double y, double width, double height, double rowSize, double colSize) {
 
-
-    gridWidth = rowSize; // # Columns
-    gridHeight = colSize; // # Rows
-
-    // Amount of space in between cells (lower denom = more space)
-    scalarWS = width/colSize;
-    scalarHS = height/rowSize;
-
-//    // Size of cells themselves (lower denom = smaller cells)
-//    scalarW = width/colSize + 1.0;
-//    scalarH = height/rowSize + 1.0;
-
-    // Size of cells themselves (lower denom = smaller cells)
-    scalarW = width/(colSize + 1.0);
-    scalarH = height/(rowSize + 1.0);
-
-
-    // Cell stuff
-    newCell.setColor(black); // TODO: Make global param
-    newCell.setSize(scalarW, scalarH);
-
-    // Outer container
+    int padding = 30;
+    // Outer container;
     container.setCenter(x, y);
     // Size of container is relative to # of cells, margins, and size of cell
-    container.setSize(rowSize * scalarW + (newCell.getWidth()/2), colSize * scalarH + (newCell.getHeight()/2));
+    //container.setSize(rowSize * scalarW + (newCell.getWidth()/2), colSize * scalarH + (newCell.getHeight()/2));
     //container.setSize(rowSize * scalarW, colSize * scalarH);
     //container.setSize(rowSize * scalarWS, colSize * scalarHS);
+    container.setSize(width + padding, height + padding); // TODO: Don't hardcode container padding
     container.setColor(grey); // TODO: Make global param
     container.draw();
 
-    // Shifts grid relative to container
+    scalarW = (width/rowSize);
+    scalarH = (height/colSize);
+
+    // Cell stuff
+    newCell.setColor(black); // TODO: Make global param
+    newCell.setSize(scalarW - 5, scalarH - 5);
+
+    // Starts cell (0,0) at top left of container
     translateX = (container.getWidth()/2) - (newCell.getWidth()/2);
     translateY = (container.getHeight()/2) - (newCell.getHeight()/2);
 
     // Offset for cells
-    cellWidthPos = 0;
-    cellHeightPos = 0;
+    cellWidthMargin = 0;
+    cellHeightMargin = 0;
 
     // Columns
-    if (cells.size() < gridHeight) { // Build grid only if empty (at start of program)
+    if (cells.size() < colSize) { // Build grid only if empty (at start of program)
 
-        for (int i = 0; i < gridHeight; i++) {
-
-            //Rect newCell;
+        for (int i = 0; i < colSize; i++) {
             std::vector<Rect> temp;
 
             // Rows
-            for (int j = 0; j < gridWidth; j++) {
+            for (int j = 0; j < rowSize; j++) {
 
-                newCell.setCenter((x + cellWidthPos) - translateX, (y + cellHeightPos) - translateY);
+                // padding/2 cancels the difference of the corners; since cell (0,0) is at top left edge
+                newCell.setCenter(((x + cellWidthMargin) - translateX) + padding/2, ((y + cellHeightMargin) - translateY) + padding/2);
                 temp.push_back(newCell);
-                cellWidthPos += scalarWS;
-                //cellWidthPos += 60; // TODO: Not sure if want hardcoded; used scalarWS before
+                cellWidthMargin += scalarW;
             }
 
             cells.push_back(temp);
-            cellWidthPos = 0; // Reset for next row
-            cellHeightPos += scalarHS;
+            cellWidthMargin = 0; // Reset for next row
+            cellHeightMargin += scalarH;
         }
     }
+}
+
+void Grid::setMarginVert(int margin) {
+    marginVert = margin;
+}
+void Grid::setMarginHor(int margin) {
+    marginHor = margin;
 }
 
 bool Grid::checkOverlap(int x, int y) {

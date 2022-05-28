@@ -48,7 +48,6 @@ int main(void)
     }
     glfwMakeContextCurrent(window);
 
-
     /* GLEW init */
     GLenum err = glewInit();
     if (GLEW_OK != err)
@@ -87,11 +86,12 @@ static void cursor(GLFWwindow* window, double x, double y) {
 
     if (gridTest.checkOverlap(x, y)) {
         gridTest.hoverColor();
-        gridTest.hoverCompress();
+        //gridTest.hoverCompress();
     }
 
     else {
-        gridTest.releaseAll();
+        //gridTest.releaseAll();
+        //gridTest.releaseCompress();
     }
 }
 
@@ -110,7 +110,9 @@ void display() {
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
     /* Stuff to be drawn goes here */
-    gridTest.grid(WIDTH/2, HEIGHT/2, 512, 512, 12, 12); // Centers grid
+    gridTest.setMarginVert(75);
+    gridTest.setMarginHor(100);
+    gridTest.grid(WIDTH/2, HEIGHT/2, 512, 512, 2, 5); // Centers grid
     gridTest.draw();
 
     glfwSwapBuffers(window); // Switch old buffer with new; update screen

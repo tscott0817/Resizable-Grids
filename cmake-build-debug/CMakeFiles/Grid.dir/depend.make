@@ -25,3 +25,8 @@ CMakeFiles/Grid.dir/main.cpp.obj: ../components/primitiveShapes/rect.h
 CMakeFiles/Grid.dir/main.cpp.obj: ../components/primitiveShapes/shape.h
 CMakeFiles/Grid.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/Grid.dir/window.cpp.obj: ../glfw/include/GLFW/glfw3.h
+CMakeFiles/Grid.dir/window.cpp.obj: ../GL/glew.h
+CMakeFiles/Grid.dir/window.cpp.obj: ../window.cpp
+CMakeFiles/Grid.dir/window.cpp.obj: ../window.h
+

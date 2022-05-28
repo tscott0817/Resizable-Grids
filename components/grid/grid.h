@@ -25,16 +25,13 @@ class Grid {
 
 private:
 
-    int gridWidth;
-    int gridHeight;
-
     // 2D vector test
     std::vector<std::vector<Rect>> cells;
 
     Rect container;
     Rect newCell;
-    double cellWidthPos;
-    double cellHeightPos;
+    double cellWidthMargin;
+    double cellHeightMargin;
     double translateX;
     double translateY;
     double scalarW;
@@ -45,11 +42,21 @@ private:
     double column;
     double row;
 
+    int marginVert;
+    int marginHor;
+
 public:
 
     Grid();
 
     void grid(double x, double y, double width, double height, double rowSize, double colSize);
+
+    // Setters
+    void setMarginVert(int margin);
+    void setMarginHor(int margin);
+    // Getters
+
+
     bool checkOverlap(int x, int y);
     void hoverColor();
     void hoverCompress();

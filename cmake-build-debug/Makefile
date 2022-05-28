@@ -303,6 +303,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+window.obj: window.cpp.obj
+
+.PHONY : window.obj
+
+# target to build an object file
+window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/window.cpp.obj
+.PHONY : window.cpp.obj
+
+window.i: window.cpp.i
+
+.PHONY : window.i
+
+# target to preprocess a source file
+window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/window.cpp.i
+.PHONY : window.cpp.i
+
+window.s: window.cpp.s
+
+.PHONY : window.s
+
+# target to generate assembly for a file
+window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/window.cpp.s
+.PHONY : window.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -329,6 +356,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... window.obj
+	@echo ... window.i
+	@echo ... window.s
 .PHONY : help
 
 

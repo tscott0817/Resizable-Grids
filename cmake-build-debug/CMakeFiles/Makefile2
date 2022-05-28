@@ -132,12 +132,12 @@ glew/src/clean: glew/src/CMakeFiles/update_mappings.dir/clean
 CMakeFiles/Grid.dir/all: glew/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Grid.dir\build.make CMakeFiles/Grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Grid"
 .PHONY : CMakeFiles/Grid.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Grid.dir/rule
@@ -159,7 +159,7 @@ CMakeFiles/Grid.dir/clean:
 glew/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f glew\src\CMakeFiles\glfw.dir\build.make glew/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f glew\src\CMakeFiles\glfw.dir\build.make glew/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Built target glfw"
 .PHONY : glew/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -186,7 +186,7 @@ glew/src/CMakeFiles/glfw.dir/clean:
 glew/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f glew\src\CMakeFiles\update_mappings.dir\build.make glew/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f glew\src\CMakeFiles\update_mappings.dir\build.make glew/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=29 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\Projects\Grid\cmake-build-debug\CMakeFiles --progress-num=30 "Built target update_mappings"
 .PHONY : glew/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
